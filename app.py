@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-car_data = pd.read_csv("C:/Users/diana/Practicas Python/vehicles_env/vehicles_us.csv") # leer los datos
+car_data = pd.read_csv("vehicles_us.csv") # leer los datos
 st.header("Todo  lo quee necesitas saber sobre la venta de coches")
 
 hist_button = st.button('Construir histograma') # crear un botón
@@ -28,6 +28,7 @@ if disp_button: # al hacer clic en el botón
         
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
+<<<<<<< HEAD
     
 # crear una casilla de verificación
 horizontal_bar= st.checkbox('Construir diagrama de barras horizontal')
@@ -40,3 +41,5 @@ if horizontal_bar: # si la casilla de verificación está seleccionada
     
     #mostrar gráfico horizontal
     st.plotly_chart(fig_horizontal_bar, use_container_width=True)
+=======
+>>>>>>> 4257ab30eadf4ea50fb3566b4ed9eb6d41d82f91
