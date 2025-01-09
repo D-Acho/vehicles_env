@@ -28,3 +28,15 @@ if disp_button: # al hacer clic en el botón
         
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
+    
+# crear una casilla de verificación
+horizontal_bar= st.checkbox('Construir diagrama de barras horizontal')
+
+if horizontal_bar: # si la casilla de verificación está seleccionada
+    st.write('Grafico de barras horizontal de costos')
+    
+    # crear grafico de barras
+    fig_horizontal_bar = px.bar(car_data, x='price', y='model', orientation='h', title='Costos de Vehículos por Año') 
+    
+    #mostrar gráfico horizontal
+    st.plotly_chart(fig_horizontal_bar, use_container_width=True)
