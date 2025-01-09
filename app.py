@@ -28,7 +28,6 @@ if disp_button: # al hacer clic en el botón
         
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
-<<<<<<< HEAD
     
 # crear una casilla de verificación
 horizontal_bar= st.checkbox('Construir diagrama de barras horizontal')
