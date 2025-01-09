@@ -41,5 +41,4 @@ if horizontal_bar: # si la casilla de verificación está seleccionada
     
     #mostrar gráfico horizontal
     st.plotly_chart(fig_horizontal_bar, use_container_width=True)
-=======
->>>>>>> 4257ab30eadf4ea50fb3566b4ed9eb6d41d82f91
+
